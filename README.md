@@ -118,6 +118,19 @@ Isso comprova que:
 - O consumer recebeu e processou o evento
 - Redis foi atualizado com operação atômica (INCRBYFLOAT)
 
+CONSULTAS VIA REDIS
+
+COM O DOCKER RODANDO EM UM TERMINAL
+ABRA outro e consulte "docker exec -it redis redis-cli"
+Altere o saldo de Carla e João
+
+SET saldo:Carla 100
+SET saldo:Joao 200
+
+Para a operação de consulta
+use
+GET saldo:Carla
+GET saldo:Joao
 
 ---
 
